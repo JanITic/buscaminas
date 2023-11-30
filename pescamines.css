@@ -1,0 +1,94 @@
+body {
+  background-image: url('img/fondo.png'); /* Ruta del archivo de fondo */
+  background-color: #bababa;
+  margin: 0; /* Elimina el margen predeterminado del body */
+  padding: 0; /* Elimina el relleno predeterminado del body */
+  font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir la página */
+  background-position: center; /* Centra la imagen en la página */
+  display: flex; /* Usa Flexbox para centrar elementos */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Hace que el body ocupe todo el alto del viewport */
+}
+
+#tabla {
+    background-color: #bababa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+#tabla td {
+    border: 3px solid #959595; 
+}
+
+.btn {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+ }
+ 
+ .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .btn::after {
+  background-color: #fff;
+ }
+ 
+ .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+
+ .casella {
+  width: 25px;
+  height: 25px;
+  background-image: url('fons20px.jpg');
+  background-size: cover;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.bandera {
+  background-image: url('bandera20px.jpg');
+  background-size: cover;
+}
